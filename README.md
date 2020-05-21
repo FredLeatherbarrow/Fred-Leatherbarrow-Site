@@ -1,2 +1,2 @@
-# liza-site
-The repository for my sister's website
+# Fred-Leatherbarrow-Site
+The repository for my website
