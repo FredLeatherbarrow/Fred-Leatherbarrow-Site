@@ -4,12 +4,17 @@
     width: 100%;
     box-sizing: border-box;
 }
+h2{
+    font-size: 1.3em;
+}
 .main{
     margin: 5px, 0;
     box-sizing: border-box;
     width: 100%;
     height: auto;
     font-size: 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 .width-1{width: 100%}
 .width-2{width: 100%}
@@ -31,6 +36,8 @@
     display: inline-block;
     background-color: gray;
     font-size: 1rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 /*Triggers for tablet sized screens only*/
 @media only screen and (min-width: 500px) and (max-width: 800px){
