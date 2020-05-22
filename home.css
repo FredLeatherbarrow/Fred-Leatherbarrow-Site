@@ -1,8 +1,23 @@
-.top{
-    margin-left: 10%;
-    margin-right: 10%;
+.top {
+    margin-left: 15px;
+    margin-right: 15px;
     align-self: center;
 }
+/*Triggers for tablet sized screens*/
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    .top {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+/*Triggers for laptops and above*/
+@media only screen and (min-width: 800px){
+    .top {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 body{
     margin:0px;
 }
