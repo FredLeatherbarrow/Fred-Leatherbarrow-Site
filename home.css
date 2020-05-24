@@ -1,9 +1,10 @@
 .top {
-    margin: 5px, 0;
+    margin: 5px 0;
     align-self: center;
     width: 100%;
     box-sizing: border-box;
 }
+
 h2{
     font-size: 1.3em;
 }
@@ -30,6 +31,11 @@ h2{
         margin: 0 2.5%;
         width: 95%;
     }
+    .top {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
 }
 [class*="width-"] {
     box-sizing: border-box; 
@@ -41,20 +47,11 @@ h2{
 }
 /*Triggers for tablet sized screens only*/
 @media only screen and (min-width: 500px) and (max-width: 800px){
-    .top {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width: 95%;
-    }
+
 
 }
 /*Triggers for laptops and above*/
 @media only screen and (min-width: 800px){
-    .top {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
-    }
 }
 
 body{
