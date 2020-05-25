@@ -1,21 +1,40 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #333333;
+}
 .top {
-    margin: 5px 0;
+    padding: 0 5px;
+    margin: 0;
     align-self: center;
     width: 100%;
     box-sizing: border-box;
+    background-color: #555555;
+    border: 1px solid white;
+    border-bottom: 0;
 }
-.nav{
-    margin: 1px 0;
-    box-sizing: border-box;
+.nav {
+    margin-bottom: 20px;
     width: 100%;
-    font-size: 0;
+    box-sizing: border-box;
+    background-color: #555555;
+    border: 1px solid white;
+    padding: 5px 0;
 }
-ul{
+.nav ul{
+    
+    height:100%;
     list-style: none;
     box-sizing: border-box;
     padding: 0;
+    font-size: 0;
+    text-align: center;
 }
-li{
+li.navComp {
+    vertical-align: middle;
+    height:100%;
     font-size: 1rem;
     box-sizing: border-box;
     display: inline-block;
@@ -23,15 +42,16 @@ li{
 }
 h2{
     font-size: 1.3em;
+    margin: 0;
+    padding: 5px 0;
 }
 .main{
-    margin: 5px 0;
     box-sizing: border-box;
     width: 100%;
     height: auto;
     font-size: 0;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
 }
 .width-1{width: 100%}
 .width-2{width: 100%}
@@ -47,11 +67,12 @@ h2{
         margin: 0 2.5%;
         width: 95%;
     }
-    .nav{
-        width: 65%;
-        margin: 0 2.5%;
+    .top{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
     }
-    .top {
+    .nav{
         margin-left: 2.5%;
         margin-right: 2.5%;
         width: 95%;
@@ -60,10 +81,10 @@ h2{
 [class*="width-"] {
     box-sizing: border-box; 
     display: inline-block;
-    background-color: gray;
+    background-color: #777777;
     font-size: 1rem;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
 }
 /*Triggers for tablet sized screens only*/
 @media only screen and (min-width: 500px) and (max-width: 800px){
@@ -72,6 +93,7 @@ h2{
 }
 /*Triggers for laptops and above*/
 @media only screen and (min-width: 800px){
+
 }
 
 body{
