@@ -4,33 +4,36 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #333333;
+    background-color: white;
     margin: 0;
 }
 .top {
-    padding: 0 5px;
     margin: 0;
+    padding-bottom: 10px;;
     align-self: center;
     width: 100%;
-    background-color: #555555;
-    border: 1px solid white;
+    background-color: red;
     border-bottom: 0;
+    text-align: center;
 }
 a{
     text-decoration: none;
 }
 .nav {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     width: 100%;
-    background-color: #555555;
-    border: 1px solid white;
+    background-color: red;
     height: 30px;
     font-size: 0;
 }
+.navShadow {
+    background-image: linear-gradient(red, white);
+    height: 25px;
+}
 h2{
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin: 0;
-    padding: 5px 0;
+    padding: 10px;
 }
 .main{
      
@@ -40,72 +43,51 @@ h2{
     border-top: 1px solid white;
     border-right: 1px solid white;
 }
-.width-1{width: 100%}
-.width-2{width: 100%}
-.width-3{width: 100%}
-.width-4{width: 100%}
+[class*="width-"] {
+    display: inline-block;
+    background-color: maroon;
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    text-align: center;
+    width: 100%;
+}
+
 /*specifically not phone stuff*/
 @media only screen and (min-width: 500px){
     .width-1{width: 25%}
     .width-2{width: 50%}
     .width-3{width: 75%}
     .width-4{width: 100%}
-    .main{
-        margin: 0 2.5%;
-        width: 95%;
-    }
-    .top{
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width: 95%;
-    }
-    .nav{
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width: 95%;
-    }
 }
-[class*="width-"] {
-      
-    display: inline-block;
-    background-color: #777777;
-    font-size: 1rem;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    text-align: center;
-}
+
 .navComp {
     vertical-align: middle;
     font-size: 1rem;
     display: inline-block;
     width: 25%;
     border: 0;
-    border-right: 1px solid white;
-    background-color: #555555;
+    background-color: red;
     height:100%;
     line-height: 30px;
+    transition: background 0.5s;
+    font-weight: bold;
 }
 .navComp:hover{
     cursor: pointer;
     text-decoration: underline;
+    background-color: #be1e1e;
 }
 /*Triggers for tablet sized screens only*/
 @media only screen and (min-width: 500px) and (max-width: 1000px){
-
+    .top{
+        font-size: 1.3em;
+    }
 
 }
 /*Triggers for laptops and above*/
 @media only screen and (min-width: 1000px){
-    .main{
-        margin: 0 15%;
-        width: 70%;
-    }
-    .top{
-        margin: 0 15%;
-        width: 70%;
-    }
     .nav{
-        margin: 0 15% 20px;
-        width: 70%;
+        padding: 0 15%;
     }
 }
