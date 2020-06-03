@@ -1,6 +1,6 @@
 *{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -20,7 +20,6 @@ a{
     text-decoration: none;
 }
 .nav {
-    margin-bottom: 45px;
     width: 100%;
     background-color: red;
     height: 30px;
@@ -29,6 +28,7 @@ a{
 .navShadow {
     background-image: linear-gradient(red, white);
     height: 25px;
+    margin-bottom: 20px;
 }
 h2{
     font-size: 1.4em;
@@ -52,7 +52,6 @@ h2{
     text-align: center;
     width: 100%;
 }
-
 /*specifically not phone stuff*/
 @media only screen and (min-width: 500px){
     .width-1{width: 25%}
@@ -60,7 +59,6 @@ h2{
     .width-3{width: 75%}
     .width-4{width: 100%}
 }
-
 .navComp {
     vertical-align: middle;
     font-size: 1rem;
