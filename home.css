@@ -29,8 +29,8 @@ a{
 }
 .navShadow {
     background-image: linear-gradient(red, white);
-    height: 25px;
-    margin-bottom: 20px;
+    height: 35px;
+    margin-bottom: 50px;
 }
 h2{
     font-size: 1.4em;
