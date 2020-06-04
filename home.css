@@ -2,17 +2,22 @@
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    font-size: 1.1em;
 }
+
 body{
-    background-color: white;
+    --main-bg-color: #7392B7;
+    --main-nav-color: #3C6BA0;
+    --main-content-color: #A3C3D9;
+    background-color: var(--main-bg-color);
     margin: 0;
 }
 .top {
     margin: 0;
-    padding-bottom: 10px;;
+    padding: 20px 0;
     align-self: center;
     width: 100%;
-    background-color: red;
+    background-color: var(--main-nav-color);
     border-bottom: 0;
     text-align: center;
 }
@@ -26,26 +31,27 @@ a:hover{
 }
 .nav {
     width: 100%;
-    background-color: red;
-    height: 30px;
+    background-color: var(--main-nav-color);
     font-size: 0;
+    padding-bottom: 20px;
 }
 .navShadow {
-    background-image: linear-gradient(red, white);
-    height: 35px;
-    margin-bottom: 50px;
+    background-image: linear-gradient(var(--main-nav-color), var(--main-bg-color));
+    height: 20px;
+    margin-bottom: 40px;
 }
 h2{
     font-size: 1.4em;
     margin: 0;
-    padding: 10px;
 }
 .main{   
     width: 100%;
     height: auto;
     font-size: 0;
-    padding: 10px 0;
-    background-color: maroon;
+    margin: 10px 0;
+    background-color: var(--main-content-color);
+    box-shadow: 0px 0px 2px 12px var(--main-content-color);
+    -webkit-box-shadow: 0px 0px 2px 12px var(--main-content-color);
 }
 [class*="width-"] {
     display: inline-block;
@@ -66,7 +72,7 @@ h2{
     display: inline-block;
     width: 25%;
     border: 0;
-    background-color: red;
+    background-color: var(--main-nav-color);
     height:100%;
     line-height: 30px;
     transition: background 0.5s;
@@ -75,7 +81,7 @@ h2{
 .navComp:hover{
     cursor: pointer;
     text-decoration: underline;
-    background-color: #be1e1e;
+    background-color: var(--main-bg-color);
 }
 /*Triggers for tablet sized screens only*/
 @media only screen and (min-width: 500px) and (max-width: 1000px){
@@ -87,12 +93,13 @@ h2{
 /*Triggers for laptops and above*/
 @media only screen and (min-width: 1000px){
     .nav{
-        padding: 0 15%;
+        padding: 0 15% 30px;
     }
     .top{
         font-size: 1.5em;
     }
     .main{ 
-        padding: 10px 15%;
+        margin: 10px 10%;
+        width: 80%;
     }
 }
