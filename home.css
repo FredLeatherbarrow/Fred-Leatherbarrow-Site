@@ -50,8 +50,8 @@ h2{
     font-size: 0;
     margin: 10px 0;
     background-color: var(--main-content-color);
-    box-shadow: 0px 0px 2px 12px var(--main-content-color);
-    -webkit-box-shadow: 0px 0px 2px 12px var(--main-content-color);
+    box-shadow: 0 0 3px 12px var(--main-content-color);
+    -webkit-box-shadow: 0 0 3px 12px var(--main-content-color);
 }
 [class*="width-"] {
     display: inline-block;
