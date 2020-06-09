@@ -103,3 +103,9 @@ h2{
         width: 80%;
     }
 }
+footer.nav{
+    position: absolute;
+    bottom: 0;
+    height: 175px;
+    box-shadow: 0 0 8px 6px var(--main-nav-color);
+}
