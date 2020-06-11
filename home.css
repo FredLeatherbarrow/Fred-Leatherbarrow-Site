@@ -49,15 +49,21 @@ h2{
     height: auto;
     font-size: 0;
     margin: 10px 0;
-    background-color: var(--main-content-color);
-    box-shadow: 0 0 3px 12px var(--main-content-color);
-    -webkit-box-shadow: 0 0 3px 12px var(--main-content-color);
 }
-[class*="width-"] {
+.center{
+    text-align: center;
+}
+[class*="width-"]{
     display: inline-block;
     font-size: 1rem;
     text-align: center;
     width: 100%;
+}
+.main [class*="width-"] {
+    margin: 20px 2.5%;
+    background-color: var(--main-content-color);
+    box-shadow: 0 0 3px 12px var(--main-content-color);
+    -webkit-box-shadow: 0 0 3px 12px var(--main-content-color);
 }
 /*specifically not phone stuff*/
 @media only screen and (min-width: 500px){
@@ -65,7 +71,12 @@ h2{
     .width-2{width: 50%}
     .width-3{width: 75%}
     .width-4{width: 100%}
+    .main .width-1{width: 20%}
+    .main .width-2{width: 45%}
+    .main .width-3{width: 70%}
+    .main .width-4{width: 95%}
 }
+
 .navComp {
     vertical-align: middle;
     font-size: 1rem;
