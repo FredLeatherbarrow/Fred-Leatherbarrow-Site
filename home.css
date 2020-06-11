@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-size: 1.1em;
 }
-
+img{
+    max-width: 100%;
+    height: 250px;
+}
 body{
     --main-bg-color: #7392B7;
     --main-nav-color: #3C6BA0;
